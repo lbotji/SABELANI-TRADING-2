@@ -204,24 +204,7 @@
             font-size: 0.95rem;
         }
 
-        /* ============
-       Values / About
-       ============ */
-        .two-col {
-            margin-top: 1.25rem;
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 1rem;
-        }
-
-        .card {
-            padding: 1rem;
-            border-radius: 10px;
-            background: #fff;
-            box-shadow: 0 6px 18px rgba(11, 58, 102, 0.03);
-        }
-
-        /* ============
+         /* ============
        Team (flex)
        ============ */
         .team {
@@ -246,6 +229,44 @@
             color: var(--blue)
         }
 
+
+        /* ============
+       Values / About
+       ============ */
+        .two-col {
+            margin-top: 1.25rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+
+        .card {
+            padding: 1rem;
+            border-radius: 10px;
+            background: #fff;
+            box-shadow: 0 6px 18px rgba(11, 58, 102, 0.03);
+        }
+
+        .testimonials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .testimonial {
+      background: white;
+      padding: 1rem;
+      border-left: 5px solid #daa520;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .testimonial h4 {
+      margin-top: 1rem;
+      color: #004080;
+    }
+
+       
         /* ===========
        Footer
        =========== */
@@ -430,7 +451,7 @@
         <!-- Team (flex) -->
         <section id="team" style="margin-top:1.25rem">
             <h2 style="color:var(--blue)">Meet the Team</h2>
-
+        
             <div class="team" aria-label="Leadership">
                 <div class="member">
                     <h4>Mxolisi Kenneth Mthembu</h4>
@@ -438,14 +459,14 @@
                     <p class="muted" style="margin-top:0.5rem">Leads strategy, operations and logistics across all
                         business units.</p>
                 </div>
-
+        
                 <div class="member">
                     <h4>Swazi Duduzile Mthembu</h4>
                     <div class="muted">Commercial Manager</div>
                     <p class="muted" style="margin-top:0.5rem">Focuses on client relations and quality assurance across
                         every delivery.</p>
                 </div>
-
+        
                 <div class="member">
                     <h4>Operations Team</h4>
                     <div class="muted">Logistics & Site Management</div>
@@ -454,6 +475,30 @@
                 </div>
             </div>
         </section>
+
+        <section id="testimonials">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p>“Sabelani Trading provided our company with top-quality PPE and delivered right on schedule. Their
+                        professionalism and service exceeded our expectations.”</p>
+                    <h4>— Thabo Mokoena, Operations Manager</h4>
+                </div>
+                <div class="testimonial">
+                    <p>“Their catering service was impeccable! The food presentation and taste were exceptional. We’ll
+                        definitely be working with them again.”</p>
+                    <h4>— Lerato Dlamini, Event Coordinator</h4>
+                </div>
+                <div class="testimonial">
+                    <p>“From the first meeting to project completion, Sabelani handled our office renovation with great
+                        efficiency and attention to detail.”</p>
+                    <h4>— Sipho Nkosi, Project Director</h4>
+                </div>
+            </div>
+        </section>
+
+
+        
 
         <!-- CTA / Contact -->
         <section id="contact" style="margin-top:1.5rem">
