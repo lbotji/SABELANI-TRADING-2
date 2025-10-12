@@ -247,6 +247,37 @@
             box-shadow: 0 6px 18px rgba(11, 58, 102, 0.03);
         }
 
+        /* === SERVICES GRID === */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .service {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .service img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .service-content {
+      padding: 1rem;
+    }
+
+    .service-content h3 {
+      color: #004080;
+      margin-bottom: 0.5rem;
+    }
+
         .testimonials {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -406,40 +437,49 @@
             </aside>
         </section>
 
-        <!-- Services: CSS Grid with auto-fit so it reflows responsively -->
-        <section id="services" aria-labelledby="servicesTitle" style="margin-top:1.75rem">
-            <h2 id="servicesTitle" style="margin:0 0 0.9rem 0; color:var(--blue)">Our Services</h2>
-
+        <!-- === SERVICES SECTION === -->
+        <section id="services">
+            <h2>Our Services</h2>
             <div class="services">
-                <article class="service">
-                    <h3>Stationery Supply</h3>
-                    <p>Comprehensive range of office, school and specialised stationery with reliable supply and
-                        cost-effective solutions.</p>
-                    <p class="muted">[Replace with stationery images / catalog link]</p>
-                </article>
-
-                <article class="service">
-                    <h3>Personal Protective Equipment (PPE)</h3>
-                    <p>PPE and safety gear that meets high safety standards for construction, industrial and food
-                        sectors.</p>
-                    <p class="muted">[Replace with PPE images: masks, overalls, reflective vests]</p>
-                </article>
-
-                <article class="service">
-                    <h3>Catering Services</h3>
-                    <p>Full-service catering for events — stress-free planning, food preparation, and professional
-                        service.</p>
-                    <p class="muted">[Replace with sample platters and menu images]</p>
-                </article>
-
-                <article class="service">
-                    <h3>Construction Projects</h3>
-                    <p>Design-build, general contracting and project management for fit-outs, renovations and
-                        maintenance.</p>
-                    <p class="muted">[Replace with completed project photos: paving, tiling, plumbing]</p>
-                </article>
+                <div class="service">
+                    <img src="" alt="Stationery">
+                    <div class="service-content">
+                        <h3>Stationery Supply</h3>
+                        <p>We provide a comprehensive range of office, school, and specialized stationery products, ensuring
+                            efficiency and reliability in every delivery.</p>
+                    </div>
+                </div>
+        
+                <div class="service">
+                    <img src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238" alt="PPE">
+                    <div class="service-content">
+                        <h3>Personal Protective Equipment</h3>
+                        <p>We supply certified PPE and safety gear across all industries including construction, industrial, and
+                            food processing — protecting your people.</p>
+                    </div>
+                </div>
+        
+                <div class="service">
+                    <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0" alt="Catering">
+                    <div class="service-content">
+                        <h3>Catering Services</h3>
+                        <p>Our professional catering team delivers high-quality, full-service food and beverage experiences for
+                            events of any size.</p>
+                    </div>
+                </div>
+        
+                <div class="service">
+                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e" alt="Construction">
+                    <div class="service-content">
+                        <h3>Construction Projects</h3>
+                        <p>We provide design, contracting, and project management for residential and commercial spaces — built
+                            with quality and care.</p>
+                    </div>
+                </div>
             </div>
         </section>
+
+        
 
         <!-- About + Core values: uses grid to lay out two columns on large screens -->
         <section id="about" style="margin-top:1.75rem">
