@@ -297,6 +297,37 @@
       color: #004080;
     }
 
+    button:hover {
+        background: #c79318;
+        color: #004080;
+
+    }
+
+     .contact-info p {
+    margin: 5px 0;
+    color: #333;
+  }
+
+    .faq-dropdown {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    margin-top: 15px;
+  }
+
+  .faq-item h4 {
+    color: #004080;
+    margin-bottom: 5px;
+  }
+
+  .faq-item p {
+    color: #333;
+    margin-bottom: 15px;
+  }
+
+ 
+
     /* === CONTACT FORM === */
     form {
       display: flex;
@@ -593,6 +624,28 @@
                 <p><strong>Phone:</strong> +27 73 877 6222 | +27 83 987 6543</p>
                 <p><strong>Email:</strong> sabelanitraiding@gmail.com</p>
             </div>
+            <hr />
+            <!-- FAQ Section -->
+            <div class="faq-container">
+                <button class="faq-btn" onclick="toggleFAQ()">FAQ</button>
+                <div id="faq-dropdown" class="faq-dropdown" style="display:none;">
+                    <div class="faq-item">
+                        <h4>What services does Sabelani Trading offer?</h4>
+                        <p>We provide a full range of Stationery supplies, PPE equipment, Catering Services, and Construction
+                            solutions across South Africa.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>How can I request a quote?</h4>
+                        <p>You can request a quote by clicking the "Request a Quote" button on our homepage or contacting us
+                            directly through the provided email or phone number.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Is Sabelani Trading a black-owned company?</h4>
+                        <p>Yes, Sabelani Trading is 100% black-owned and fully committed to empowerment, inclusion, and community
+                            development.</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
 
@@ -661,5 +714,16 @@
   -->
 
 </body>
+<script>
+    function toggleContactInfo() {
+        const contact = document.getElementById('contact-info');
+        contact.style.display = contact.style.display === 'none' ? 'block' : 'none';
+    }
+
+    function toggleFAQ() {
+        const faq = document.getElementById('faq-dropdown');
+        faq.style.display = faq.style.display === 'none' ? 'block' : 'none';
+    }
+</script>
 
 </html>
