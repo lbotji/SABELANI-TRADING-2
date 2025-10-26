@@ -106,6 +106,12 @@
             box-shadow: 0 4px 14px rgba(11, 58, 102, 0.06);
         }
 
+        nav.primary a.cta:hover {
+            background: #0b3a66;
+            color: white;
+            transition: 250ms ease-in-out 0.2s;
+        }
+
         /* ===========
        Hero section
        =========== */
@@ -160,15 +166,30 @@
         }
 
         .btn.primary {
-            background: var(--blue);
+            background: var(--gold);
             color: #fff;
         }
 
+         .btn.primary:hover {
+            background: var(--blue);
+            color: #fff;
+            transition: 250ms ease-in-out 0.2s;
+         }
+
         .btn.secondary {
-            background: transparent;
-            color: var(--blue);
+            background: var(--gold);
+            color: #fff;
             border: 1px solid rgba(11, 58, 102, 0.08);
         }
+
+        .btn.secondary:hover {
+            background: var(--blue);
+            color: #fff;
+            transition: 250ms ease-in-out 0.2s;
+            border: 1px solid rgba(11, 58, 102, 0.08);
+        }
+
+
 
         /* ============
        Services grid
@@ -299,6 +320,24 @@
 
     button:hover {
         background: #c79318;
+        color: #004080;
+
+    }
+
+    .contact-us {
+        background-color: #1a3d7c;
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: 0.3s;
+
+    }
+
+    .contact-us:hover {
+         background: #c79318;
         color: #004080;
 
     }
@@ -614,11 +653,11 @@
                 What started as a bold idea has evolved into a dynamic enterprise driven by vision, growth, and unwavering
                 vigor.
             </p>
-        
-            <button onclick="document.getElementById('contact-info').style.display='block'"
-                style="background-color: #1a3d7c; color: white; padding: 12px 24px; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; transition: 0.3s;">
+          
+            <button class="-contact-us" onclick="document.getElementById('contact-info').style.display='block'">
                 Contact Us
             </button>
+          
         
             <div id="contact-info" style="display:none; margin-top: 20px; font-size: 1rem; color: #333;">
                 <p><strong>Phone:</strong> +27 73 877 6222 | +27 83 987 6543</p>
