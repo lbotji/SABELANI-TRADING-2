@@ -813,16 +813,18 @@
   -->
 
 </body>
-<script>
-    function toggleContactInfo() {
-        const contact = document.getElementById('contact-info');
-        contact.style.display = contact.style.display === 'none' ? 'block' : 'none';
-    }
 
-    function toggleFAQ() {
-        const faq = document.getElementById('faq-dropdown');
-        faq.style.display = faq.style.display === 'none' ? 'block' : 'none';
-    }
+<script>
+    document.getElementById("contact-toggle").addEventListener("click", function () {
+        const contactInfo = document.getElementById("contact-info");
+        if (contactInfo.style.display === "none" || contactInfo.style.display === "") {
+            contactInfo.style.display = "block";
+            this.textContent = "Close Contact Info";
+        } else {
+            contactInfo.style.display = "none";
+            this.textContent = "Contact Us";
+        }
+    });
 </script>
 
 </html>
